@@ -1,9 +1,12 @@
+<%-- 
+    Document   : descrizione
+    Created on : 28-giu-2017, 17.11.41
+    Author     : marcotegas
+--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Nerdbook : il social dei nerd</title>
@@ -15,25 +18,7 @@ and open the template in the editor.
          media="screen">
     </head>
     <body>
-        <header>
-
-            <div id="title">
-                Nerdbook
-            </div>
-
-            <nav>
-                <ol>
-                    <li><a href="descrizione.html">Descrizione</a></li>
-                    <li><a href="profilo.html">Profilo</a></li>
-                    <li><a href="bacheca.html">Bacheca</a></li>
-                </ol>
-
-
-                <div>
-                    <a  href="login.html" >Login</a>
-                </div>
-            </nav>
-        </header>
+        <jsp:include page="header.jsp"/>
 
         
          <div id="informazioni">

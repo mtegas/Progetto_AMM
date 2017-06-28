@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<%-- 
+    Document   : profilo
+    Created on : 28-giu-2017, 17.11.56
+    Author     : marcotegas
+--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <title>Nerdbook : Profilo</title>
@@ -15,43 +17,18 @@ and open the template in the editor.
               media="screen">
     </head>
     <body>
-        <header>
+        
+    <jsp:include page="header.jsp"/>
 
-            <div id="title">
-                Nerdbook
-            </div>
+    <jsp:include page="sidebar.jsp"/>
 
-            <nav>
-                <ol>
-                    <li><a href="descrizione.html">Descrizione</a></li>
-                    <li><a href="profilo.html">Profilo</a></li>
-                    <li><a href="bacheca.html">Bacheca</a></li>
-                </ol>
-
-
-                <div>
-                    <img src="img/malgioglio.jpg" width="100"  alt="Foto profilo"/>
-                    <p>Malgioglio</p>
-                    <a> Logout </a>
-                </div>
-            </nav>
-        </header>
-
-        <div id="divBody">
-
-            <div id="info">
-                <h2>Persone</h2>
-                <p>Pinco Pallino</p>
-                <p>Mario Rossi</p>
-                <p>Riccardo Ricci</p>
-                <h2>Gruppi</h2>
-                <p>Mongolfieristi</p>
-                <p>Ritardatari</p>
-            </div>
-
+        
+    
+        
+        
             <div id="latoProfilo">
 
-                <img src="img/malgioglio.jpg" width="100"  alt="Foto profilo"/>
+                <img src="${userUrlFotoProfilo}" width="100"  alt="Foto profilo"/>
 
                 <form>
                     <div class="text">
@@ -82,3 +59,4 @@ and open the template in the editor.
 
                 </body>
                 </html>
+
